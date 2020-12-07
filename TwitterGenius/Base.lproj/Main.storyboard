@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gJu-1w-wsk">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5eC-3A-3fI">
+            <objects>
+                <viewController id="gJu-1w-wsk" customClass="ViewController" customModule="TwitterGenius" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7b-3t-cqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwa-r8-Fd9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="MLc-Nf-Ipl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-2h-KsB">
+                                                <rect key="frame" x="133.5" y="0.0" width="108" height="407"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HP9-ee-vOF">
+                                                <rect key="frame" x="20" y="462" width="335" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="Blue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6wm-BH-uBw"/>
+                                                </constraints>
+                                                <color key="textColor" name="Dark Blue"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-zl-NGZ">
+                                                <rect key="frame" x="157.5" y="567.5" width="60" height="59"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Rge-zl-NGZ" secondAttribute="height" multiplier="1:1" id="fHv-cO-bnq"/>
+                                                    <constraint firstAttribute="height" constant="60" id="lv1-5K-4W0"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" backgroundImage="questionmark.circle.fill" catalog="system">
+                                                    <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="predictPressed:" destination="gJu-1w-wsk" eventType="touchUpInside" id="uRJ-Qv-1Rf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="HP9-ee-vOF" secondAttribute="trailing" constant="20" id="3pU-j7-3tl"/>
+                                            <constraint firstItem="HP9-ee-vOF" firstAttribute="leading" secondItem="MLc-Nf-Ipl" secondAttribute="leading" constant="20" id="qvY-ig-uVS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="MLc-Nf-Ipl" firstAttribute="top" secondItem="jwa-r8-Fd9" secondAttribute="top" id="0zn-oV-LK2"/>
+                                    <constraint firstAttribute="bottom" secondItem="MLc-Nf-Ipl" secondAttribute="bottom" constant="40" id="L9S-7h-rMr"/>
+                                    <constraint firstItem="MLc-Nf-Ipl" firstAttribute="leading" secondItem="jwa-r8-Fd9" secondAttribute="leading" id="P1B-65-SvE"/>
+                                    <constraint firstAttribute="trailing" secondItem="MLc-Nf-Ipl" secondAttribute="trailing" id="nXs-gW-13G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cel-SL-yWb"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jwa-r8-Fd9" firstAttribute="leading" secondItem="Cel-SL-yWb" secondAttribute="leading" id="Xh1-ph-0nL"/>
+                            <constraint firstItem="jwa-r8-Fd9" firstAttribute="trailing" secondItem="Cel-SL-yWb" secondAttribute="trailing" id="a1L-0a-HgM"/>
+                            <constraint firstItem="jwa-r8-Fd9" firstAttribute="bottom" secondItem="Cel-SL-yWb" secondAttribute="bottom" id="htS-27-SyT"/>
+                            <constraint firstItem="jwa-r8-Fd9" firstAttribute="top" secondItem="a7b-3t-cqJ" secondAttribute="top" id="iZh-hN-vbU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="jwa-r8-Fd9" id="5UJ-WU-hbt"/>
+                        <outlet property="sentimentLabel" destination="Ep9-2h-KsB" id="RGg-ER-dLz"/>
+                        <outlet property="textField" destination="HP9-ee-vOF" id="eKD-X0-T0H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z31-Pp-XLb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="Blue">
+            <color red="0.14405849579999999" green="0.42530715470000002" blue="0.59261065719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark Blue">
+            <color red="0.1004597023" green="0.3227137625" blue="0.44660526509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
