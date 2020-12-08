@@ -94,10 +94,10 @@
     <resources>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="Blue">
-            <color red="0.14405849579999999" green="0.42530715470000002" blue="0.59261065719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.14399999380111694" green="0.42500001192092896" blue="0.59299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Dark Blue">
-            <color red="0.1004597023" green="0.3227137625" blue="0.44660526509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10000000149011612" green="0.32300001382827759" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
